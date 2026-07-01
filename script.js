@@ -8,6 +8,16 @@ const startGameBtn = document.getElementById("startGameBtn");
 const home = document.getElementById("home")
 const quizScreen = document.getElementById("quizScreen");
 const scoreboard = document.getElementById("scoreboard");
+const history=document.getElementById("history");
+const feedback=document.getElementById("feedback");
+
+history.addEventListener("click", () => {
+    alert("🚧 History feature is coming soon!\n\nCurrently under development.");
+});
+
+feedback.addEventListener("click", () => {
+    alert("🚧 Feedback feature is coming soon!\n\nCurrently under development.");
+});
 
 
 
