@@ -11,16 +11,14 @@ const scoreboard = document.getElementById("scoreboard");
 const history=document.getElementById("history");
 const feedback=document.getElementById("feedback");
 
+const feedbackBtn = document.getElementById("feedbacktn");
+const feedbackModal = document.getElementById("feedbackModal");
+const closeFeedback = document.getElementById("closeFeedback");
+
+
 history.addEventListener("click", () => {
     alert("🚧 History feature is coming soon!\n\nCurrently under development.");
 });
-
-feedback.addEventListener("click", () => {
-    alert("🚧 Feedback feature is coming soon!\n\nCurrently under development.");
-});
-
-
-
 newGameBtn.addEventListener("click", () => {
     homeScreen.style.display = "none";
     gameSetup.style.display = "block";
@@ -30,7 +28,7 @@ home.addEventListener("click", () => {
     gameSetup.style.display = "none";
     quizScreen.style.display = "none";
     scoreboard.style.display = "none";
-
+    feedback.style.display = "none"; 
 });
 
 
@@ -214,3 +212,15 @@ function showScoreboard() {
     });
 
 }
+
+
+
+
+feedbackBtn.addEventListener("click", () => {
+    feedbackModal.style.display = "flex"; 
+});
+
+
+closeFeedback.addEventListener("click", () => {
+    feedbackModal.style.display = "none";
+});

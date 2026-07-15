@@ -679,3 +679,101 @@ body{
     background: #0ea5e9;
     transform: scale(1.06);
 }
+
+/* Fix the Feedback Button to look like the main buttons */
+#feedbacktn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #3bc9f5; /* Matches your light blue */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(59, 201, 245, 0.4);
+    transition: 0.3s;
+}
+
+#feedbacktn:hover {
+    box-shadow: 0 0 25px rgba(59, 201, 245, 0.8);
+}
+
+/* Modal Background Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* The Pop-up Box */
+.modal-content {
+    background: #0f172a; /* Dark theme to match app */
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    color: white;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.8);
+    border: 1px solid #3bc9f5;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #bae6fd;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #475569;
+    background: #1e293b;
+    color: white;
+    font-family: inherit;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.submit-btn, .close-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 45%;
+}
+
+.submit-btn {
+    background: #3bc9f5;
+    color: black;
+}
+
+.close-btn {
+    background: #ef4444; /* Red for cancel */
+    color: white;
+}
